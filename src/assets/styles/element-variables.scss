@@ -1,0 +1,64 @@
+/**
+* I think element-ui's default theme color is too light for long-term use.
+* So I modified the default color and you can modify it to your liking.
+**/
+
+/* theme color */
+$--color-primary: $blueColor;
+$--color-success: #52c41a;
+$--color-warning: #faad14;
+$--color-danger: #f5222d;
+// $--color-info: #1E1E1E;
+
+//Button
+$--button-font-weight: 400;
+$--button-border-radius: 2px;
+$--button-padding-vertical: 10px;
+$--button-padding-horizontal: 20px;
+
+// Table
+$--table-border-color: rgba($textColor, 0.1);
+$--table-font-color: rgba($textColor, 0.6);
+$--table-header-font-color: $textColor;
+$--table-row-hover-background-color: rgba($textColor, 0.08);
+$--table-header-background-color: rgba($textColor, 0.1);
+
+//Pagination
+$--pagination-font-size: 12px;
+
+//Input
+$--input-border-radius: 2px;
+$--input-height: 36px;
+$--input-line-height: 36px;
+$--input-font-color: $textColor;
+$--input-background-color: transparent;
+
+//DataPicker
+$--datepicker-header-font-color:$textColor;
+$--datepicker-inrange-background-color: transparent;
+
+$--radio-input-background-color: transparent;
+$--checkbox-background-color: transparent;
+
+//Tree
+$--tree-node-hover-background-color: transparent;
+$--tree-font-color: rgba($textColor,0.5);
+
+
+// $--color-text-regular: #1f2d3d;
+
+$--border-color-light: #d5d5e4;
+$--border-color-lighter: #d5d5e4;
+
+$--table-border: 1px solid#DBDBE4;
+
+/* icon font path, required */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  theme: $--color-primary;
+}
